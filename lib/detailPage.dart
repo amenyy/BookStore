@@ -73,11 +73,11 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 10),
               Text(
                 'Author: ${widget.book.auteur}', // Use widget.book here
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 17),
               ),
               Text(
                 'Price: ${widget.book.prix}', // Use widget.book here
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 20),
               ),
               const SizedBox(height: 10),
               const Text(
@@ -107,9 +107,9 @@ class _DetailPageState extends State<DetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.red,
+                            color: Colors.purple,
                           ),
-                          child: Icon(Icons.remove, color: Colors.white),
+                          child: Icon(Icons.remove, color: Colors.blueGrey),
                         ),
                       ),
                       SizedBox(width: 10),
@@ -122,9 +122,9 @@ class _DetailPageState extends State<DetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.green,
+                            color: Color.fromARGB(255, 2, 179, 8),
                           ),
-                          child: Icon(Icons.add, color: Colors.white),
+                          child: Icon(Icons.add, color: Colors.blueGrey),
                         ),
                       ),
                     ],
@@ -148,7 +148,7 @@ class _DetailPageState extends State<DetailPage> {
                     const SnackBar(
                       content: Text('Added'),
                       duration: Duration(seconds: 1),
-                      backgroundColor: Colors.green,
+                      backgroundColor: Color.fromARGB(255, 150, 254, 153),
                     ),
                   );
                 },
